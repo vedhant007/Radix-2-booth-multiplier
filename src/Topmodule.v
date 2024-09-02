@@ -1,9 +1,7 @@
 
 //Booth Encoder:
 
-A module that takes a 3-bit slice of the multiplier and produces a control signal that determines the operation (add, subtract, shift).
-verilog
-Copy code
+
 module booth_encoder(input [2:0] booth_in, output reg [1:0] operation);
 // operation: 00 = 0, 01 = +M, 10 = -M, 11 = +2M or -2M
 always @(*) begin
